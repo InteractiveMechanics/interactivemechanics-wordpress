@@ -1,0 +1,136 @@
+// Partials: Typography
+
+html, body {
+	font-size: 62.5%;
+}
+
+* {
+	font-family: $primary-font-face;
+    font-size: 1.6rem;
+}
+
+h1 {}
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.4;
+
+    > strong,
+    > b {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $im-lightblue;
+
+        @media #{$screen-xs} {
+            font-size: 2.7rem;
+        }
+    }
+
+    @media #{$screen-xs} {
+        font-size: 2.7rem;
+    }
+}
+h3 {
+    font-size: 2.7rem;
+    font-weight: 300;
+    line-height: 1.4;
+
+    @media #{$screen-xs} {
+        font-size: 2.4rem;
+    }
+}
+h4 {
+    color: $im-gold;
+    font-size: 2.1rem;
+    font-weight: 900;
+    line-height: 1.3;
+}
+h5 {}
+h6 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: $im-lightblue;
+    text-transform: uppercase;
+}
+
+p, li {
+    color: $mid-gray;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    &.lead {
+        font-weight: 100;
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+}
+li {
+    margin-bottom: 8px;
+}
+b, strong {
+    font-size: inherit;
+    font-weight: 900;
+}
+
+label, label > span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $mid-gray;
+}
+
+a {
+    outline: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.arrow-link {
+        color: $im-lightblue;
+        font-size: 1.6rem;
+        font-weight: 900;
+        margin-bottom: 20px;
+        display: block;
+        
+        > svg {
+            margin-left: 5px;
+            width: auto;
+            height: 12px;
+            
+            > * {
+                stroke: $im-lightblue;
+            }
+        }
+
+        &:hover {
+            color: darken($im-lightblue, 15%);
+            text-decoration: none;
+
+            > svg {
+                > * {
+                    stroke: darken($im-lightblue, 15%);
+                }
+            }
+        }
+    }
+}
+
+
+hr {
+    &.divider {
+        border: none;
+        background: url(../images/divider.svg) no-repeat center center;
+        height: 14px;
+        opacity: 0.35;
+        margin: 40px auto;
+    }
+}
+
+.select-none {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+}

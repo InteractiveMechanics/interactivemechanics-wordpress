@@ -1,0 +1,115 @@
+// Partials: Case Studies
+
+.case-study {
+    background: $light-gray;
+    display: block;
+    padding: 80px 30px 60px;
+    position: relative;
+    margin-bottom: 25px;
+
+    .image {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;    
+        right: 0;
+        background-size: cover;
+        background-position: center center;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        background: rgba(black, 0.5);
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    h3 {
+        color: white;
+        font-size: 3.6rem;
+        margin: 0;
+        position: relative;
+        z-index: 5;
+    }
+    h6 {
+        color: white;
+        margin: 0 0 10px;
+        position: relative;
+        z-index: 5;
+    }
+    svg {
+        width: 80px;
+        height: 28px;
+        margin: 35px auto 0;
+        display: block;
+        position: relative;
+        z-index: 5;
+
+        line, 
+        polyline {
+            stroke: white;
+        }
+    }
+
+    &:hover {
+        .overlay {
+            opacity: 1;
+            background: $im-lightblue;
+            background: rgba($im-lightblue, 0.8);
+        }
+    }
+}
+
+.case-study-header {
+    .client-logo {
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+.case-study-content {
+    h4 {
+        margin-bottom: 20px;
+    }
+    hr {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    img {
+        max-width: 100%;
+        border: 1px solid $light-gray;
+
+        & + figcaption {
+            font-size: 1.6rem;
+            font-weight: 100;
+            color: $mid-gray;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.case-study-footer {
+    text-align: center;
+
+    a {
+        border: 3px solid $im-lightblue;
+        border-radius: 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin: 0 8px;
+
+        &:hover {
+            border: 3px solid darken($im-lightblue, 10%);
+        }
+
+        @media #{$screen-xs} {
+            margin: 0 0 10px;
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+}

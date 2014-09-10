@@ -1,0 +1,47 @@
+// Partials: SVG Icons
+
+.svgicon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+
+    path {
+        fill: $mid-gray;
+    }
+}
+
+a[svgicon] {
+    color: $dark-gray;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 999px;
+    width: 125px;
+    height: 125px;
+    padding: 28px 0;
+    margin: 0 auto 25px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .svgicon {
+        width: 65px;
+        height: 65px;
+   
+        path {
+            fill: $dark-gray;
+        }
+    }
+
+    &[svgicon="large"] {
+        font-size: 1.4rem;
+        width: 100%;
+        height: 150px;
+        
+        .svgicon {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

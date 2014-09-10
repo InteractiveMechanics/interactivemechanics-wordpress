@@ -1,0 +1,30 @@
+.btn {
+    color: $im-lightblue;
+    font-size: 1.6rem;
+    font-weight: 900;
+    
+    > svg {
+        margin-left: 5px;
+        width: auto;
+        height: 12px;
+        
+        > * {
+            stroke: $im-lightblue;
+        }
+    }
+
+    &:hover {
+        color: darken($im-lightblue, 15%);
+        text-decoration: none;
+
+        > svg {
+            > * {
+                stroke: darken($im-lightblue, 15%);
+            }
+        }
+    }
+
+    &.btn-lg.btn-link {
+        font-size: 1.8rem;
+    }
+}

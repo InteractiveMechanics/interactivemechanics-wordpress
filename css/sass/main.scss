@@ -1,0 +1,19 @@
+// Common Variables
+@import "variables";
+
+// Partials
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/animations";
+@import "partials/buttons";
+@import "partials/videos";
+@import "partials/svgicons";
+@import "partials/nav";
+@import "partials/footer";
+
+// Pages
+@import "partials/homepage";
+@import "partials/single";
+@import "partials/news";
+@import "partials/casestudies";
+@import "partials/contact";

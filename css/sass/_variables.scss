@@ -1,0 +1,24 @@
+// Colors
+$im-gold            : #c5b591;
+$im-lightblue       : #7bcfde;
+$im-darkblue        : #3b5998;
+$im-red             : #e24428;
+$im-citron          : #D3DF4D;
+
+$dark-gray          : #231f20;
+$mid-gray           : #6d6e70;
+$light-gray         : #F1F1F2;
+
+// Media Queries
+$screen-xs			: "(max-width: 767px)";
+$screen-gtxs        : "(min-width: 768px)";
+$screen-sm			: "(min-width: 768px) and (max-width: 991px)";
+$screen-ltmd        : "(max-width: 991px)";
+$screen-md			: "(min-width: 992px) and (max-width: 1199px)";
+$screen-lg			: "(min-width: 1200px)";
+
+// Fonts
+$primary-font-face 	: 'museo-sans', 'Helvetica Neue', sans-serif;
+
+// Transitions
+$transition         : all 0.25s;

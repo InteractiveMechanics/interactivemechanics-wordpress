@@ -1,0 +1,82 @@
+// Partials: Single Page
+
+section.single {
+    @media #{$screen-ltmd} {
+        margin-top: 40px;
+    }
+    
+    h3 {
+        font-size: 3rem;
+        font-weight: 100;
+        line-height: 1.6;
+        margin-bottom: 22px;
+
+        strong {
+            font-weight: 700;
+            color: $im-citron;
+        }
+    }
+    h5, h5 > b {
+        color: $mid-gray;
+        font-weight: 100;
+        font-size: 1.6rem;
+        line-height: 1;
+        margin: 25px 0 0;
+        vertical-align: top;
+
+        > b {
+            font-weight: 700;
+        }
+
+        .thumb {
+            border-radius: 999px;
+            overflow: hidden;
+            margin-right: 10px;
+            margin-top: -8px;
+            display: inline-block;
+        }
+    }
+    p, li {
+        font-weight: 100;
+        font-size: 1.8rem;
+        line-height: 1.8;
+
+        a {
+            font-size: 1.8rem;
+            line-height: 1.8;
+        }
+
+        code {
+            padding: 15px 20px;
+            font-size: 90%;
+            color: #c7254e;
+            background-color: $light-gray;
+            border-radius: 4px;
+            line-height: 1.4;
+            display: block;
+            margin: 14px 0;
+        }
+    }
+    ol > li {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+section.services {
+    a[svgicon] {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        & + h3 {
+            margin-top: 0;
+        }
+    }
+    p {
+        line-height: 2.1;
+    }
+}
