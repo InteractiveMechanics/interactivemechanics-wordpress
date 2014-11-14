@@ -108,7 +108,7 @@
         transform: translateY(0);
     }
 
-    @media #{$screen-ltmd} {
+    @media #{$screen-xs} {
         -webkit-transform: translateY(0);
         transform: translateY(0);
         height: 50px;

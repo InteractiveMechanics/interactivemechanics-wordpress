@@ -4,8 +4,8 @@
     <div class="container">
         <h1 id="hero-phrase" class="select-none"><strong id="verb">Craft</strong> better <strong id="noun">experiences</strong></h1>
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                <h4>We're all about building better digital products by walking in the shoes of our users.</h4>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <h2>We're passionate about building digital projects that improve lives, educate visitors, and empower your users.</h2>
             </div>
         </div>
     </div>

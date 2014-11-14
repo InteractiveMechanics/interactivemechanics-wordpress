@@ -27,7 +27,9 @@ $(function(){
 			'interfaces',
             'products',
             'mobile apps',
-            'strategies'
+            'strategies',
+            'partnerships',
+            'communities'
 		],
 		verbs = [
 			'Craft',
@@ -38,7 +40,8 @@ $(function(){
 			'Brainstorm',
             'Develop',
             'Formulate',
-            'Forge'
+            'Forge',
+            'Share'
 		];
 	
     var randomVerb = Math.floor((Math.random() * (verbs.length))),

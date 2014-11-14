@@ -9,7 +9,7 @@ section.single {
         font-size: 3rem;
         font-weight: 100;
         line-height: 1.6;
-        margin-bottom: 22px;
+        margin: 25px 0 15px;
 
         strong {
             font-weight: 700;
@@ -45,17 +45,31 @@ section.single {
             font-size: 1.8rem;
             line-height: 1.8;
         }
+        b, strong {
+            font-weight: 700;
+        }
 
-        code {
-            padding: 15px 20px;
-            font-size: 90%;
+        > code {
+            padding: 2px 6px;
+            font-size: 75%;
             color: #c7254e;
             background-color: $light-gray;
             border-radius: 4px;
-            line-height: 1.4;
-            display: block;
-            margin: 14px 0;
+            display: inline-block;
+            margin: 0;
         }
+    }
+    
+    pre {
+        margin: 10px 0 15px;
+
+        code > span {
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            font-size: 1.4rem;
+        }
+    }
+    p {
+        margin-bottom: 15px;
     }
     ol > li {
         margin-top: 10px;
@@ -64,6 +78,19 @@ section.single {
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    .alignleft {
+        float: left;
+        margin-right: 20px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+    .alignright {
+        float: right;
+        margin-left: 20px;
+        margin-top: 8px;
+        margin-bottom: 20px;
     }
 }
 

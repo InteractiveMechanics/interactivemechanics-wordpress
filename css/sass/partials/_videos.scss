@@ -26,6 +26,10 @@ video + figcaption {
     &:hover {
         opacity: 1;
     }
+
+    @media #{$screen-xs} {
+        display: none;
+    }
 }
 
 .video-fallback {
