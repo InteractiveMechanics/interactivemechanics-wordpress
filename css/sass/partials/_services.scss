@@ -1,0 +1,22 @@
+section.services {
+    a[svgicon] {
+        height: 100px;
+        padding: 25px 0;
+        margin: 0 auto;
+
+        & + h3 {
+            margin-top: 0;
+        }
+    }
+    p {
+        line-height: 1.8;
+        font-size: 1.4rem;
+        margin: 15px 0;
+    }
+    h6 {
+        color: #6D6E70;
+        font-weight: 300;
+        font-size: 1.6rem;
+        margin: 0 0 25px;
+    }
+}

@@ -45,5 +45,4 @@
         </div>
     </section>
 <?php endif; ?>
-	
 <?php get_footer(); ?>

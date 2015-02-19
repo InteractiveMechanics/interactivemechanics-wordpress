@@ -8,7 +8,7 @@ section.single {
     h3 {
         font-size: 3rem;
         font-weight: 100;
-        line-height: 1.6;
+        line-height: 1.4;
         margin: 25px 0 15px;
 
         strong {
@@ -92,18 +92,17 @@ section.single {
         margin-top: 8px;
         margin-bottom: 20px;
     }
-}
-
-section.services {
-    a[svgicon] {
-        margin-bottom: 0;
-        padding-bottom: 0;
-
-        & + h3 {
-            margin-top: 0;
+    .wp-caption {
+        border-top: 5px solid $light-gray;
+        padding-top: 25px;
+        border-bottom: 4px solid $light-gray;
+        padding-bottom: 25px;
+        
+        &.alignnone {
+            max-width: 100%;
         }
-    }
-    p {
-        line-height: 2.1;
+        &.alignright {
+            margin-left: 30px;
+        }
     }
 }

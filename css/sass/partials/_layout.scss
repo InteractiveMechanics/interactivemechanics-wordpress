@@ -44,13 +44,20 @@ body {
                 }
                 h1 {
                     color: white;
-                    font-size: 4.7rem;
+                    font-size: 7.2rem;
                     font-weight: 900;
                     position: relative;
                     text-align: center;
                     z-index: 5;
                     width: 80%;
                     margin: 20px auto;
+                    
+                    @media #{$screen-sm} {
+                        font-size: 4.8rem;
+                    }
+                    @media #{$screen-xs} {
+                        font-size: 3.6rem;
+                    }
                 }
                 h2 {
                     color: white;
@@ -111,7 +118,7 @@ body {
                 &.full-video {
                     height: 620px;
                     overflow: hidden;   
-                    padding: 220px 0;
+                    padding: 160px 0;
                     border-bottom: none;
 
                     @media #{$screen-xs} {
