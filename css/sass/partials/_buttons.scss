@@ -2,6 +2,7 @@
     color: $im-lightblue;
     font-size: 1.6rem;
     font-weight: 900;
+    border-radius: 999px;
     
     > svg {
         margin-left: 5px;
@@ -17,7 +18,7 @@
         color: darken($im-lightblue, 15%);
         text-decoration: none;
 
-        > svg {
+        > svg {        
             > * {
                 stroke: darken($im-lightblue, 15%);
             }

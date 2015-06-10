@@ -12,6 +12,15 @@
                     </h5>
                     <hr class="divider">
                     <?php the_content(); ?>
+                    <hr class="spacer">
+                    <div class="mailchimp">
+                        <h3>Want updates from our blog?</h3>
+                        <h5>Sign-up for the occasional email! We promise not to spam your inbox.</h5>
+                        <form action="http://interactivemechanics.us4.list-manage.com/subscribe/post?u=60a7a9b85d71c540f39a195f3&amp;id=185fdc2b87" method="post" id="mc-embedded-subscribe-form" role="form" name="mc-embedded-subscribe-form" novalidate="">
+                            <input name="EMAIL" type="email" class="form-control input-lg" placeholder="johnsmith@company.com">
+                            <button type="submit" class="arrow-link"><?php include('svgs/arrow.php'); ?></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

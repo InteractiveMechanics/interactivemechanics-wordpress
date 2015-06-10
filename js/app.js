@@ -44,29 +44,48 @@ $(function(){
             'Share'
 		];
 	
-    var randomVerb = Math.floor((Math.random() * (verbs.length))),
-        randomNoun = Math.floor((Math.random() * (nouns.length)));
+    var randomVerb = getRandomWord(verbs, prevVerb),
+        randomNoun = getRandomWord(nouns, prevNoun);;
 
-    $('#verb').text(verbs[randomVerb]);
-    $('#noun').text(nouns[randomNoun]);
+    $('#verb').text(randomVerb);
+    $('#noun').text(randomNoun);
 
-    $('#verb').on('click', function(){
-        // Get random
-        randomVerb = Math.floor((Math.random() * (verbs.length)));
-        if (randomVerb === jQuery.inArray(prevVerb, verbs)){ randomVerb = Math.floor((Math.random() * (verbs.length))); }
+    function getRandomWord(type, prev) {
+        randomWord = Math.floor((Math.random() * (type.length)));
+        if (randomWord === jQuery.inArray(prev, type)){ randomWord = Math.floor((Math.random() * (type.length))); }
 
-        // Set text and previous word
-        $('#verb').text(verbs[randomVerb]);
-        prevVerb = verbs[randomVerb];
-    });
-    $('#noun').on('click', function(){
-        // Get random and check if its the same
-        randomNoun = Math.floor((Math.random() * (nouns.length)));
-        if (randomNoun === jQuery.inArray(prevNoun, nouns)){ randomNoun = Math.floor((Math.random() * (nouns.length))); }
-        console.log(nouns[randomNoun]);
+        return type[randomWord];
+    }
+    function changeNoun() {
+        var random = getRandomWord(nouns, prevNoun);
 
-        // Set text and previous word
-        $('#noun').text(nouns[randomNoun]);
-        prevNoun = nouns[randomNoun];
-    });
+        $('#noun').text(random);
+        prevNoun = random;
+    }
+    function changeVerb() {
+        var random = getRandomWord(verbs, prevVerb);
+
+        $('#verb').text(random);
+        prevVerb = random;
+    }
+    function setTimer(bool) {
+        var timer = Math.floor(Math.random() * 4000) + 5000;
+
+        if (bool){
+            setTimeout(function(){ 
+                $('#verb').addClass('hovered');
+                setTimeout(function(){ changeVerb(); $('#verb').removeClass('hovered'); setTimer(false); }, 500);
+            }, timer);
+        } else {
+            setTimeout(function(){ 
+                $('#noun').addClass('hovered');
+                setTimeout(function(){ changeNoun(); $('#noun').removeClass('hovered'); setTimer(true); }, 500);
+            }, timer);
+        }
+    }
+
+    $('#verb').on('click', changeVerb);
+    $('#noun').on('click', changeNoun);
+
+    setTimer(false);
 });

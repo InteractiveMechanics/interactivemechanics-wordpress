@@ -4,7 +4,7 @@ body {
   html .content > section,
   body .content > section {
     padding: 80px 0;
-    border-bottom: 1px solid #f1f1f2;
+    border-bottom: 1px solid #F1F1F2;
     position: relative; }
     @media (max-width: 767px) {
       html .content > section,
@@ -119,6 +119,36 @@ body {
             body .content > section.full-image.full-video h1 {
               font-size: 3.6rem;
               line-height: 1.3; } }
+  html .content .mailchimp h3,
+  body .content .mailchimp h3 {
+    margin: 0 0 8px;
+    line-height: 1.1; }
+  html .content .mailchimp h5,
+  body .content .mailchimp h5 {
+    margin: 0 0 20px; }
+  html .content .mailchimp form,
+  body .content .mailchimp form {
+    position: relative; }
+    html .content .mailchimp form button.arrow-link,
+    body .content .mailchimp form button.arrow-link {
+      width: 74px;
+      background: none;
+      border: none;
+      position: absolute;
+      right: 15px;
+      top: 0;
+      padding: 20px 12px 18px;
+      transition: all 0.25s; }
+      html .content .mailchimp form button.arrow-link > svg > *,
+      body .content .mailchimp form button.arrow-link > svg > * {
+        stroke: #263961;
+        transition: all 0.25s; }
+      html .content .mailchimp form button.arrow-link:hover,
+      body .content .mailchimp form button.arrow-link:hover {
+        right: 0; }
+        html .content .mailchimp form button.arrow-link:hover > svg > *,
+        body .content .mailchimp form button.arrow-link:hover > svg > * {
+          stroke: #7bcfde; }
 
 @media (max-width: 767px) {
   .container {
@@ -211,9 +241,18 @@ label, label > span {
   font-size: 2rem;
   background: #eee;
   border: 1px solid #d9d9d9;
-  border-radius: 4px; }
+  border-radius: 4px;
+  transition: all 0.25s;
+  box-shadow: 0; }
   .form-control.input-lg {
     height: 60px; }
+  .form-control:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cccccc; }
+  .form-control:focus, .form-control:focus:hover {
+    box-shadow: 0 0 12px #7bcfde;
+    border: 1px solid #67c8d9;
+    background: #F1F1F2; }
 
 select.form-control {
   text-indent: 8px; }
@@ -232,14 +271,18 @@ a {
     a.arrow-link > svg {
       margin-left: 5px;
       width: auto;
-      height: 12px; }
+      height: 12px;
+      margin-left: 5px;
+      transition: all 0.25s; }
       a.arrow-link > svg > * {
         stroke: #7bcfde; }
     a.arrow-link:hover {
       color: #3eb9cf;
       text-decoration: none; }
-      a.arrow-link:hover > svg > * {
-        stroke: #3eb9cf; }
+      a.arrow-link:hover > svg {
+        margin-left: 12px; }
+        a.arrow-link:hover > svg > * {
+          stroke: #3eb9cf; }
 
 .btn.btn-block {
   background: #7bcfde;
@@ -258,6 +301,8 @@ hr.divider {
   height: 14px;
   opacity: 0.35;
   margin: 40px auto; }
+hr.spacer {
+  margin: 60px auto; }
 
 .select-none {
   -webkit-user-select: none;
@@ -269,31 +314,23 @@ hr.divider {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 @-moz-keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 @-ms-keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 @keyframes fadeIn {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 .fadeIn {
   -webkit-animation: fadeIn 1s 1 forwards;
   -moz-animation: fadeIn 1s 1 forwards;
@@ -303,7 +340,8 @@ hr.divider {
 .btn {
   color: #7bcfde;
   font-size: 1.6rem;
-  font-weight: 900; }
+  font-weight: 900;
+  border-radius: 999px; }
   .btn > svg {
     margin-left: 5px;
     width: auto;
@@ -327,7 +365,7 @@ video {
   width: auto;
   height: auto;
   z-index: -1;
-  background: #f1f1f2;
+  background: #F1F1F2;
   background-size: cover; }
 
 video + figcaption {
@@ -447,7 +485,7 @@ a[svgicon] {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px 0;
   height: 55px;
-  border-bottom: 1px solid #f1f1f2;
+  border-bottom: 1px solid #F1F1F2;
   width: 100%;
   position: fixed;
   z-index: 99;
@@ -580,7 +618,7 @@ footer {
     display: block;
     margin: 0 auto 15px; }
     footer a.logo svg > path {
-      fill: #f1f1f2;
+      fill: #F1F1F2;
       opacity: 0.35;
       transition: all 0.25s; }
   footer a.logo:hover svg > path {
@@ -597,7 +635,7 @@ footer {
       font-weight: 700;
       line-height: 1; }
       footer p > a:hover {
-        color: #f1f1f2; }
+        color: #F1F1F2; }
   footer ul.list-inline {
     margin: 20px auto 0; }
     footer ul.list-inline > li {
@@ -613,7 +651,7 @@ footer {
         color: #6e6e76;
         font-weight: 700; }
         footer ul.list-inline > li > a:hover {
-          color: #f1f1f2; }
+          color: #F1F1F2; }
 
 .homepage .content section.hero {
   height: 620px;
@@ -658,13 +696,13 @@ footer {
       transition: all 0.25s;
       display: inline-block !important;
       position: relative; }
-      .homepage .content section.hero h1 strong:hover {
+      .homepage .content section.hero h1 strong:hover, .homepage .content section.hero h1 strong.hovered {
         top: -10px;
-        opacity: 0.75;
+        opacity: 0.65;
         padding-bottom: 10px;
         cursor: pointer; }
       .homepage .content section.hero h1 strong:last-of-type {
-        border-bottom: #d3df4d 6px dotted; }
+        border-bottom: #D3DF4D 6px dotted; }
       @media (min-width: 992px) and (max-width: 1199px) {
         .homepage .content section.hero h1 strong {
           font-size: 6rem; } }
@@ -725,7 +763,7 @@ footer {
       .homepage .content section.services .nav-tabs li a .svgicon path {
         fill: #6d6e70; }
       .homepage .content section.services .nav-tabs li a:hover {
-        background: #f1f1f2;
+        background: #F1F1F2;
         color: #231f20; }
         .homepage .content section.services .nav-tabs li a:hover .svgicon path {
           fill: #231f20; }
@@ -733,17 +771,17 @@ footer {
           .homepage .content section.services .nav-tabs li a:hover {
             background: none; } }
     .homepage .content section.services .nav-tabs li.active a {
-      background: #d3df4d;
+      background: #D3DF4D;
       color: white; }
       .homepage .content section.services .nav-tabs li.active a .svgicon path {
         fill: white; }
         @media (max-width: 767px) {
           .homepage .content section.services .nav-tabs li.active a .svgicon path {
-            fill: #d3df4d; } }
+            fill: #D3DF4D; } }
       @media (max-width: 767px) {
         .homepage .content section.services .nav-tabs li.active a {
           background: none;
-          color: #d3df4d; } }
+          color: #D3DF4D; } }
 .homepage .content section.services .tab-content h3 {
   margin-bottom: 20px; }
 
@@ -757,7 +795,7 @@ section.single h3 {
   margin: 25px 0 15px; }
   section.single h3 strong {
     font-weight: 700;
-    color: #d3df4d; }
+    color: #D3DF4D; }
 section.single h5, section.single h5 > b {
   color: #6d6e70;
   font-weight: 100;
@@ -786,7 +824,7 @@ section.single p, section.single li {
     padding: 2px 6px;
     font-size: 75%;
     color: #c7254e;
-    background-color: #f1f1f2;
+    background-color: #F1F1F2;
     border-radius: 4px;
     display: inline-block;
     margin: 0; }
@@ -814,9 +852,7 @@ section.single .alignright {
   margin-top: 8px;
   margin-bottom: 20px; }
 section.single .wp-caption {
-  border-top: 5px solid #f1f1f2;
-  padding-top: 25px;
-  border-bottom: 4px solid #f1f1f2;
+  border-bottom: 4px solid #F1F1F2;
   padding-bottom: 25px; }
   section.single .wp-caption.alignnone {
     max-width: 100%; }
@@ -824,7 +860,7 @@ section.single .wp-caption {
     margin-left: 30px; }
 
 section.news {
-  background: #f1f1f2; }
+  background: #F1F1F2; }
   @media (max-width: 991px) {
     section.news {
       padding-top: 75px !important; } }
@@ -909,7 +945,7 @@ section.news {
       z-index: 5;
       transition: all 0.25s; }
       section.news .news-item svg path {
-        fill: #f1f1f2; }
+        fill: #F1F1F2; }
     section.news .news-item .overlay {
       position: absolute;
       top: 0;
@@ -931,7 +967,7 @@ section.news {
       opacity: 1; }
 
 .case-study {
-  background: #f1f1f2;
+  background: #F1F1F2;
   display: block;
   padding: 80px 30px 60px;
   position: relative;
@@ -994,7 +1030,7 @@ section.news {
   margin-bottom: 40px; }
 .case-study-content img {
   max-width: 100%;
-  border: 1px solid #f1f1f2; }
+  border: 1px solid #F1F1F2; }
   .case-study-content img + figcaption {
     font-size: 1.6rem;
     font-weight: 100;
@@ -1064,9 +1100,65 @@ section.services h6 {
   font-size: 1.6rem;
   margin: 0 0 25px; }
 
+.events {
+  background: #F1F1F2;
+  border: 1px solid #d7d7d9;
+  padding: 20px 30px 0; }
+  .events h5 {
+    margin: 0 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #6d6e70; }
+  .events .event {
+    margin: 0 -30px;
+    padding: 25px 25px;
+    background: white;
+    border-top: 1px solid #d7d7d9; }
+    .events .event h3 {
+      margin: 0;
+      font-size: 2.4rem; }
+    .events .event h6 {
+      margin: 0 0 5px;
+      font-size: 1.2rem;
+      color: #c5b591; }
+      .events .event h6 span {
+        opacity: 0.35;
+        padding: 0 8px; }
+
+.call-out {
+  background: #7bcfde;
+  border: 1px solid #52c0d4;
+  padding: 30px 50px;
+  margin-top: 40px; }
+  .call-out h2 {
+    color: white;
+    margin: 0 0 12px; }
+    .call-out h2 strong {
+      color: white; }
+  .call-out p {
+    color: white; }
+  .call-out a {
+    float: right;
+    color: white;
+    display: block;
+    border: 3px solid white;
+    padding: 12px 24px;
+    margin-top: 25px;
+    border-radius: 999px;
+    font-size: 1.8rem;
+    transition: all 0.25s; }
+    .call-out a > svg > * {
+      stroke: white; }
+    .call-out a:hover {
+      background: white;
+      color: #7bcfde; }
+
 section.signup {
   background: #3e3739;
   padding: 75px 0 85px; }
   section.signup h2 {
     color: white;
     margin: 0 0 15px; }
+
+/*# sourceMappingURL=main.css.map */
